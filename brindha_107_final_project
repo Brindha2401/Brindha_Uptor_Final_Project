@@ -1,0 +1,62 @@
+This program demonstrates:
+
+Data Preprocessing: Handling missing values, encoding categorical variables, and scaling features.
+EDA: Visualizations such as histograms, heatmaps, pairplots, boxplots, and countplots.
+Unsupervised Learning: Applying K-Means clustering to identify patterns.
+Supervised Learning: Training and evaluating a logistic regression model.
+Dimensionality Reduction: Using PCA for feature reduction and visualization.
+
+
+Output :
+
+Columns: ['id', 'gender', 'shared_account', 'membership_tier', 'membership_auto_renew', 'membership_fee', 'membership_start_date', 'push_notification_enabled', 'have_app', 'app_engagement_score', 'bought_store_brand', 'promotion_participation_count', 'average_basket_size', 'use_count', 'reward_points_used']
+Missing values before imputation:
+id                               0
+gender                           0
+shared_account                   0
+membership_tier                  0
+membership_auto_renew            0
+membership_fee                   0
+membership_start_date            0
+push_notification_enabled        0
+have_app                         0
+app_engagement_score             0
+bought_store_brand               0
+promotion_participation_count    0
+average_basket_size              0
+use_count                        0
+reward_points_used               0
+dtype: int64
+
+Missing values after imputation:
+id                               0
+gender                           0
+shared_account                   0
+membership_tier                  0
+membership_auto_renew            0
+membership_fee                   0
+membership_start_date            0
+push_notification_enabled        0
+have_app                         0
+app_engagement_score             0
+bought_store_brand               0
+promotion_participation_count    0
+average_basket_size              0
+use_count                        0
+reward_points_used               0
+dtype: int64
+
+Logistic Regression Classification Report:
+               precision    recall  f1-score   support
+
+           0       0.74      1.00      0.85       127
+           1       0.00      0.00      0.00        45
+
+    accuracy                           0.74       172
+   macro avg       0.37      0.50      0.42       172
+weighted avg       0.55      0.74      0.63       172
+
+
+Confusion Matrix:
+ [[127   0]
+ [ 45   0]]
